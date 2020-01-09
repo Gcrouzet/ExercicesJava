@@ -7,12 +7,10 @@ import com.api.Utils;
 public class TestMethod {
 
 	public static void main(String[] args) {
-		double rayon= 6;
+		double rayon = 6;
 		double surface = Utils.surfaceCercleV2(rayon);
 		System.out.println(surface);
-		
-		
-		
+
 		Scanner Rcercle = new Scanner(System.in);
 		System.out.println("Veuillez saisir le rayon :");
 		Double rayon2 = Rcercle.nextDouble();
