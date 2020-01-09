@@ -21,5 +21,8 @@ public class Utils {
 		return surface;
 		
 	}
-	
+	public static double volumeSphère(double rayon) {
+		double surface = (double)4/3*Math.pow(rayon, 3)*Math.PI;
+		return surface;
+	}
 }
