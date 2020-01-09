@@ -10,9 +10,16 @@ public class Utils {
 		int s = a + b;
 		return s;
 	}
-	public static float surface(int rayon) {
+	public static float surface(float rayon) {
 		float surface1 = rayon * rayon * PI;
 		return surface1;
 	}
 
+	
+	public static double surfaceCercleV2(double rayon) {
+		double surface = Math.pow(rayon, 2)*Math.PI;
+		return surface;
+		
+	}
+	
 }
