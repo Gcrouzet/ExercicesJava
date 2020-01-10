@@ -33,5 +33,11 @@ public class Utils {
 		String chaine1 = simple.nextLine();
 		simple.close();
 		return chaine1;
+		
 	}
+		
+		
+		
+		
+	
 }
