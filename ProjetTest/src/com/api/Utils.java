@@ -1,5 +1,7 @@
 package com.api;
 
+import java.util.Scanner;
+
 public class Utils {
 	public static final float PI = 3.14f;
 	public static final String COULEUR_BLEU = "bleu";
@@ -24,5 +26,12 @@ public class Utils {
 	public static double volumeSphère(double rayon) {
 		double surface = (double)4/3*Math.pow(rayon, 3)*Math.PI;
 		return surface;
+	}
+	public static String scannerSimpleTexte() {
+		Scanner simple = new Scanner(System.in);
+		System.out.println("Veuillez saisir un nombre :");
+		String chaine1 = simple.nextLine();
+		simple.close();
+		return chaine1;
 	}
 }
