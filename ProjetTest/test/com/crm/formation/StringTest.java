@@ -35,7 +35,12 @@ public class StringTest {
 		//Extraction d'une sous chaine
 		String str5 = texte.substring(0, 4);
 		System.out.println(str5);
-				
+		
+		// comparaison de chaine
+		String chaine1="test";
+		String chaine2= "TEST";
+		System.out.println(chaine1.equals(chaine2));
+		System.out.println(chaine1.equalsIgnoreCase(chaine2));		
 	}
 
 }
