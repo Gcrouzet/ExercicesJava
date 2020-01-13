@@ -31,12 +31,10 @@ public class MaxNombreV2 {
 			} else {
 				System.out.println("Le plus grand nombre est: " + nb2);
 			}
-		} else {
-			if (nb1 > nb3) {
-				System.out.println("Le plus grand nombre est: " + nb1);
-			}
-
+		} else if (nb1 > nb3) {
+			System.out.println("Le plus grand nombre est: " + nb1);
 		}
+
 	}
 
 }

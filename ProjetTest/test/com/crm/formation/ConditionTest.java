@@ -15,6 +15,16 @@ public class ConditionTest {
 
 		System.out.println("Fin programme");
 
-	}
+		int nb = 3;
+		String chaine = "OK";
 
+		if (nb > 10 && chaine.equals("OK")) {
+			System.out.println("conditions remplie");
+		} else if (nb > 10 || chaine.equals("OK")) {
+			System.out.println("Une des deux condition remplie");
+		} else {
+			System.out.println("Condition non remplie");
+		}
+
+	}
 }
