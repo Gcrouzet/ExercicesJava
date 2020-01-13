@@ -26,9 +26,7 @@ public class MaxNombreV3 {
 			nb2=nb1;
 			
 		}
-		else {
-			nb1=nb2;
-		}
+		
 		System.out.println("Veuillez saisir le troisième nombre :");
 		int nb3 = rectangle.nextInt();
 		rectangle.close();
