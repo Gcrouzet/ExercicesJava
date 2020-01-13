@@ -22,10 +22,10 @@ public class ComparerChaine {
 		System.out.println("Veuillez saisir votre mdp :");
 		String mdp = rectangle.nextLine();
 		rectangle.close();
-		String mdp1 = "CDI1234";
-		String login1 = "CRM";
-		boolean mdp2 = mdp.equals(mdp1);
-		boolean login2 = login.equals(login1);
+		final String MDP = "CDI1234";
+		final String LOGIN = "CRM";
+		boolean mdp2 = mdp.equals(MDP);
+		boolean login2 = login.equals(LOGIN);
 		boolean connexion = login2 && mdp2;
 
 		if (connexion != false) {

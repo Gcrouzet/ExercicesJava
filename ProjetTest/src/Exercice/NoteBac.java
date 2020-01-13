@@ -20,7 +20,7 @@ public class NoteBac {
 		System.out.println("Veuillez saisir votre note:");
 		int note = rectangle.nextInt();
 		rectangle.close();
-				
+
 		if (note >= 10) {
 
 			System.out.print("Vous êtes reçu à l'examen");
@@ -35,10 +35,11 @@ public class NoteBac {
 			}
 
 		} else {
-			System.out.println(raté);
-		}if (8<=note && note<10) {
-			System.out.println("Vous devez passer le rattrapage");
+			if (note < 8) {
+				System.out.println(raté);
+			} else {
+				System.out.println("Vous devez passer le rattrapage");
+			}
 		}
-
 	}
 }
