@@ -26,7 +26,7 @@ public class RéductionBilletTrain2 {
 		} else if (age >= 60) {
 			System.out.println("Vous avez le droit à une réduction de 30%.");
 		}
-		if (age >= 25 && age < 60) {
+		else {
 			System.out.println("Vous n'avez droit à aucune réduction.");
 		}
 

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Switch {
 
 	public static void main(String[] args) {
-
+		final String LUNDI = "Monday";
 		Scanner rectangle = new Scanner(System.in);
 		System.out.println("Veuillez saisir un chiffre entier entre 1 et 7 :");
 		int str1 = rectangle.nextInt();
@@ -13,7 +13,7 @@ public class Switch {
 		int day = str1;
 		switch (day) {
 		case 1:
-			System.out.println("Monday");
+			System.out.println(LUNDI);
 			break;
 		case 2:
 			System.out.println("Tuesday");
