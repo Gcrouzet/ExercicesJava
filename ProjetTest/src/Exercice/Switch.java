@@ -33,7 +33,9 @@ public class Switch {
 		case 7:
 			System.out.println("Sunday");
 			break;
-
+		default:
+			System.out.println("Entre 1 et 7 svp");
+			break;
 		}
 
 	}
