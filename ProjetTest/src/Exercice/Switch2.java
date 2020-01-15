@@ -18,26 +18,32 @@ public class Switch2 {
 		final String CDA = "Vous avez choisi de suivre la formation Concepteur Développeur d'Applications.";
 		final String DWWM = "Vous avez choisi de suivre la formation Développeur Web, Web Mobile.";
 		final String REO = "Vous avez choisi de vous réorienter.";
-		final String REF ="Vous êtes en cours de réflexion.";
+		final String REF = "Vous êtes en cours de réflexion.";
+		final String CHOIXCDA = "C";
+		final String CHOIXDWWM = "D";
+		final String CHOIXREORIENTATION = "R";
+		final String CHOIXREFLEXION = "E";
 		Scanner rectangle = new Scanner(System.in);
 		System.out.println("Choisissez une formation qualifiante parmi les propositions suivantes :" + "(C) : CDA"
 				+ " (D) : DWWM" + " (R) : Réorientation" + " (E) : En cours de réflexion");
-		char lettre = rectangle.next().charAt(0);
+		String lettre = rectangle.nextLine();
 		rectangle.close();
-		char choix = lettre;
+		String choix = lettre;
 		switch (choix) {
-		case 'C':
+		case CHOIXCDA:
 			System.out.println(CDA);
 			break;
-		case 'D':
+		case CHOIXDWWM:
 			System.out.println(DWWM);
 			break;
-		case 'R':
+		case CHOIXREORIENTATION:
 			System.out.println(REO);
 			break;
-		case 'E':
+		case CHOIXREFLEXION:
 			System.out.println(REF);
 			break;
+		default:
+			System.out.println("Choisir entre C, D, R ou E");
 		}
 	}
 }
