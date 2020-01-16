@@ -15,13 +15,14 @@ public class JeuDevinetteNombre {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		int essai = 1;
-		int nbrAleatoire = (int) (Math.random() * (100));
-	 System.out.println(nbrAleatoire);
+
+		byte nbrAleatoire = (byte) (Math.random() * (100));
+		// System.out.println(nbrAleatoire);
 
 		Scanner nbrChoisi = new Scanner(System.in);
-		System.out.println("Veuillez saisir un nombre entre 1 et 100 :");
-		int nbr = nbrChoisi.nextInt();
+		System.out.println("Veuillez saisir un nombre entier entre 0 et 100 :");
+
+		byte nbr = nbrChoisi.nextByte();
 
 		while (nbr != nbrAleatoire) {
 			if (nbr < nbrAleatoire) {
@@ -30,16 +31,16 @@ public class JeuDevinetteNombre {
 			} else {
 				System.out.print("C'est moins, ");
 			}
-			System.out.println("veuillez saisir un nombre entre 1 et 100 :");
-			nbr = nbrChoisi.nextInt();
-			essai++;
-			
-			if (nbr == nbrAleatoire) {
-				System.out.println("Bravo!!!");
-				System.out.println("Vous l'avez trouvé en "+essai+" essais");
-			}
+			System.out.println("veuillez saisir un nombre entre 0 et 100 :");
+			nbr = nbrChoisi.nextByte();
 		}
+
+		if (nbr == nbrAleatoire) {
+			System.out.println("Bravo!!!");
+		}
+
 		nbrChoisi.close();
 
 	}
+
 }
