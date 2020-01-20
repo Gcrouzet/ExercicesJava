@@ -8,9 +8,9 @@ public class Switch {
 		final String LUNDI = "Monday";
 		Scanner rectangle = new Scanner(System.in);
 		System.out.println("Veuillez saisir un chiffre entier entre 1 et 7 :");
-		int str1 = rectangle.nextInt();
+		int day = rectangle.nextInt();
 		rectangle.close();
-		int day = str1;
+
 		switch (day) {
 		case 1:
 			System.out.println(LUNDI);
