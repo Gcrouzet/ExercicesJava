@@ -15,12 +15,14 @@ public class JoueurDé {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Veuillez saisir le prénom du premier joueur :");
 		String Joueur1 = sc.nextLine();
 		System.out.println("Veuillez saisir le prénom du deuxiéme joueur :");
 		String Joueur2 = sc.nextLine();
 		sc.close();
+
 		int sommeJetDé = 0;
 		int sommeJetDé2 = 0;
 		int dé, dé2;
@@ -45,13 +47,14 @@ public class JoueurDé {
 
 		}
 		System.out.println(Joueur2 + " à " + sommeJetDé2 + " points");
-		if (sommeJetDé>sommeJetDé2) {
-			System.out.println(Joueur1+ " gagne le duel !!!");
-		}else if (sommeJetDé==sommeJetDé2) {
+		if (sommeJetDé > sommeJetDé2) {
+			System.out.println(Joueur1 + " gagne le duel !!!");
+
+		} else if (sommeJetDé == sommeJetDé2) {
 			System.out.println("égalité");
-		}else {
-			System.out.println(Joueur2+ " gagne le duel !!!");
+		} else {
+			System.out.println(Joueur2 + " gagne le duel !!!");
+
 		}
 	}
-
 }

@@ -27,7 +27,7 @@ public class TableauTest {
 		int tableau[] = new int[5];
 
 //		Initialiser un tableau
-		int tableau1[] = { 0, 1, 2 };
+		int tableau1[] = { 0, 1, 2, 3} ;
 
 //		Accéder à un élément du tableau
 		int test1 = tableau1[0];
