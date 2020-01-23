@@ -1,7 +1,12 @@
 package com.api;
 
 import java.util.Scanner;
-
+/**
+ * @author Crouzet Gabriel
+ * @version 1.0
+ * @since 22/01/20
+ *
+ */
 public class Utils {
 	public static final float PI = 3.14f;
 	public static final String COULEUR_BLEU = "bleu";

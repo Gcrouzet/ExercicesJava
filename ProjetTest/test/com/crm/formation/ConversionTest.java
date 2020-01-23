@@ -1,5 +1,10 @@
 package com.crm.formation;
-
+/**
+ * @author Crouzet Gabriel
+ * @version 1.0
+ * @since 22/01/20
+ *
+ */
 public class ConversionTest {
 
 	public static void main(String[] args) {

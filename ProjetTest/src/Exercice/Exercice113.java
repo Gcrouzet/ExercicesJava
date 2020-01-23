@@ -1,6 +1,11 @@
 package Exercice;
 import java.util.Scanner;
-
+/**
+ * @author Crouzet Gabriel
+ * @version 1.0
+ * @since 22/01/20
+ *
+ */
 public class Exercice113 {
 
 	public static void main(String[] args) {

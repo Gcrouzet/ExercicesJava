@@ -4,7 +4,9 @@
 package com.crm.formation;
 
 /**
- * @author CRM
+ * @author Crouzet Gabriel
+ * @version 1.0
+ * @since 22/01/20
  *
  */
 public class BoucleDoWhile {
