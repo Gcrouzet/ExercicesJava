@@ -1,7 +1,7 @@
 package Exercice;
 
 import java.util.Scanner;
-/**
+/** comparaison pour connaitre si palindrome if/for/boolean
  * @author Crouzet Gabriel
  * @version 1.0
  * @since 22/01/20

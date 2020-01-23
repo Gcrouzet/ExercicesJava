@@ -5,7 +5,7 @@ package Exercice;
 
 import java.util.Scanner;
 
-/**
+/** Tableau qui renvoi à un deuxième tableau
  * @author Crouzet Gabriel
  * @version 1.0
  * @since 22/01/20
@@ -13,9 +13,6 @@ import java.util.Scanner;
  */
 public class TableauTrad {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);

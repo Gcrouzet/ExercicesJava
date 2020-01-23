@@ -5,7 +5,7 @@ package Exercice;
 
 import java.util.Scanner;
 
-/**
+/** Découverte du switch et utilisation d'une constante (final)
  * @author Crouzet Gabriel
  * @version 1.0
  * @since 22/01/20

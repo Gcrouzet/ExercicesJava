@@ -5,7 +5,7 @@ package Exercice;
 
 import java.util.Scanner;
 
-/**
+/**  Obtention du bac avec mention ou pas, if imbriqué
  * @author Crouzet Gabriel
  * @version 1.0
  * @since 22/01/20

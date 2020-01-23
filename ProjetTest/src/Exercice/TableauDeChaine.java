@@ -3,7 +3,7 @@
  */
 package Exercice;
 
-/**
+/** Découverte du tableau
  * @author Crouzet Gabriel
  * @version 1.0
  * @since 22/01/20

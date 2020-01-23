@@ -5,7 +5,7 @@ package Exercice;
 
 import java.util.Scanner;
 
-/**
+/** réduction billet de train en fonction de l'âge if/else
  * @author Crouzet Gabriel
  * @version 1.0
  * @since 22/01/20

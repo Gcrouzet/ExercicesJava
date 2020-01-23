@@ -6,7 +6,7 @@ package Exercice;
 import java.util.Scanner;
 /**
  * @author Crouzet Gabriel
- * @version 1.0
+ * @version 2.0
  * @since 22/01/20
  *
  */

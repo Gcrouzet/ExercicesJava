@@ -5,7 +5,7 @@ package Exercice;
 
 import java.util.Scanner;
 
-/**
+/** Factorielle d'un nombre avec la boucle while
  * @author Crouzet Gabriel
  * @version 1.0
  * @since 22/01/20

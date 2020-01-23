@@ -5,7 +5,7 @@ package Exercice;
 
 import java.util.Scanner;
 
-/**
+/**  Jeu de devinette, utilisation de while/if/Math.random
  * @author Crouzet Gabriel
  * @version 1.0
  * @since 22/01/20

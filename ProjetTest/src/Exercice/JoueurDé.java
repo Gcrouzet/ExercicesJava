@@ -5,7 +5,7 @@ package Exercice;
 
 import java.util.Scanner;
 
-/**
+/** Jeu duel de dé Math.random/for/if
  * @author Crouzet Gabriel
  * @version 1.0
  * @since 22/01/20
