@@ -11,10 +11,10 @@ import java.util.Scanner;
  * @since 22/01/20
  *
  */
-public class JoueurDé {
+public class JoueurDe_6 {
 
 	/**
-	 * @param args
+	 * 
 	 */
 	public static void main(String[] args) {
 
