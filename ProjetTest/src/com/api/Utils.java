@@ -48,11 +48,11 @@ public class Utils {
 
 	}
 
-	public static int tableau(int[]tabInt ) {
-	int somme=0;
-		for(int nb : tabInt) {
+	public static int tableauSomme(int[] tabInt) {
+		int somme = 0;
+		for (int nb : tabInt) {
 			somme += nb;
-			
+
 		}
 		return somme;
 	}

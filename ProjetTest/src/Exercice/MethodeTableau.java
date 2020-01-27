@@ -1,6 +1,3 @@
-/**
- * 
- */
 package Exercice;
 
 import java.util.Scanner;
@@ -8,7 +5,9 @@ import java.util.Scanner;
 import com.api.Utils;
 
 /**
- * @author CRM
+ * @author Crouzet Gabriel
+ * @version 1.0
+ * @since 27/01/20
  *
  */
 public class MethodeTableau {
@@ -22,17 +21,17 @@ public class MethodeTableau {
 		System.out.println("Veuillez saisir la taille du tableau :");
 		int taille = sc.nextInt();
 		System.out.println("La taille du tableau est " + taille);
-		int[] tabInt = new int[taille];
+		int[] tabInter = new int[taille];
 
-		for (int i = 0; i < tabInt.length; i++) {
+		for (int i = 0; i < tabInter.length; i++) {
 
 			System.out.println("Veuillez saisir un nombre :");
 			int nb = sc.nextInt();
-			tabInt[i] = nb;
-			System.out.println("nombre " + nb);
+			tabInter[i] = nb;
+
 		}
 
-		System.out.println("la somme des nombres du tableau est " + Utils.tableau(tabInt));
+		System.out.println("la somme des nombres du tableau est " + Utils.tableauSomme(tabInter));
 		sc.close();
 	}
 
