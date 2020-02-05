@@ -12,6 +12,7 @@ public class Rectangle {
 	private float largeur;
 	private float longueur;
 	
+	
 	public Rectangle() {
 		
 	}
@@ -45,7 +46,16 @@ public class Rectangle {
 	public void surfaceRectangle() {
 		System.out.println("la surface du rectangle fait " + longueur * largeur + " cm²");
 	}
-	public void compareRectangle() {
-		
+	public float surface() {
+		return longueur * largeur;
+	}
+	public void compareRectangle(Rectangle rect2) {
+		if(this.surface()>rect2.surface()) {
+			System.out.println("le premier rectangle est plus grand");
+		}else if (this.surface()==rect2.surface()) {
+			System.out.println("pareil");
+		}else {
+			System.out.println("le deuxième rectangle est plus grand");
+		}
 	}
 }

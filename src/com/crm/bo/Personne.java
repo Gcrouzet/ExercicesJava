@@ -30,10 +30,10 @@ public class Personne {
 		System.out.println("Construction d'un objet personne (sans param)");
 	}
 
-	public Personne(String prenom, String nom) {
+	public Personne(String prenom, String nom, String surnom) {
 		this.prenom = prenom;
 		this.nom = nom;
-		
+		this.surnom = surnom;
 	}
 
 	// Méthodes

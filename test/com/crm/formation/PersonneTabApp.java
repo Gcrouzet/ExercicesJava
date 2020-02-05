@@ -1,4 +1,4 @@
-package com.crm.boap;
+package com.crm.formation;
 
 import com.crm.bo.Personne;
 
