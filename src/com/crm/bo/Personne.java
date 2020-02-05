@@ -5,21 +5,36 @@ package com.crm.bo;
 
 import java.util.Date;
 
-
-/** setteur getteur nom/prenom/surnom
+/**
+ * setteur getteur nom/prenom/surnom
+ * 
  * @author Crouzet Gabriel
  * @version 1.0
  * @since 05/02/20
  *
  */
 public class Personne {
-//	Attributs
+	// Attributs
 	private String surnom;
 	private String nom;
 	private String prenom;
 	protected Date dateNaissance;
 
-//	Méthodes	
+	// Constructeurs
+
+	public Personne() {
+		nom = "";
+		prenom = "";
+		surnom = "";
+		System.out.println("Construction d'un objet personne (sans param)");
+	}
+
+	public Personne(String prenom, String nom) {
+		this.prenom = prenom;
+		this.nom = nom;
+	}
+
+	// Méthodes
 	public String getNom() {
 		return nom;
 	}
@@ -27,6 +42,7 @@ public class Personne {
 	public String getPrenom() {
 		return prenom;
 	}
+
 	public String getSurnom() {
 		return surnom;
 	}
@@ -39,6 +55,7 @@ public class Personne {
 	public void setPrenom(String n) {
 		prenom = n;
 	}
+
 	public void setSurnom(String n) {
 		surnom = n;
 	}

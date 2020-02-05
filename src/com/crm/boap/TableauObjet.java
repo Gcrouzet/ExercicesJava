@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Exercice;
+package com.crm.boap;
 
 import java.util.Scanner;
 

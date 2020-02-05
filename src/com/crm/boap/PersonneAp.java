@@ -31,6 +31,13 @@ public class PersonneAp {
 		sc.close();
 
 		pers.afficherDetails();
+		
+		
+		Personne pers2 = new Personne();
+		pers2.afficherDetails();
+		
+		Personne pers3 = new Personne ("bob", "dylan");
+		pers3.afficherDetails();
 	}
 
 }

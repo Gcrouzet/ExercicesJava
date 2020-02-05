@@ -31,6 +31,7 @@ public class PersonneTabApp {
 		// Parcours du tableau
 		for (Personne p : persTab) {
 			p.afficherDetails();
+			
 		}
 	}
 }

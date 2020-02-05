@@ -10,8 +10,7 @@ package com.crm.bo;
 public class Rectangle {
 	private float largeur;
 	private float longueur;
-	private float surface;
-	
+
 	public void setLargeur(float l) {
 		largeur = l;
 	}
@@ -35,11 +34,7 @@ public class Rectangle {
 	public void surfaceRectangle() {
 		System.out.println("la surface du rectangle fait " + longueur * largeur + " cm²");
 	}
-	
-	public void setSurface(float l, float L) {
-		surface= L*l;
-	}
-	public float getSurface() {
-		return surface;
+	public void compareRectangle() {
+		
 	}
 }
