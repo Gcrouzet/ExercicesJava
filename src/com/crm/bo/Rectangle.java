@@ -8,8 +8,19 @@ package com.crm.bo;
  *
  */
 public class Rectangle {
+	
 	private float largeur;
 	private float longueur;
+	
+	public Rectangle() {
+		
+	}
+	public Rectangle(float largeur, float longueur) {
+		this.largeur = largeur;
+		this.longueur = longueur;
+	}
+	
+	
 
 	public void setLargeur(float l) {
 		largeur = l;

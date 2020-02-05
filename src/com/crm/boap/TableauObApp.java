@@ -11,7 +11,7 @@ import com.crm.bo.Personne;
  * @author CRM
  *
  */
-public class TableauObjet {
+public class TableauObApp {
 
 	public static void main(String[] args) {
 

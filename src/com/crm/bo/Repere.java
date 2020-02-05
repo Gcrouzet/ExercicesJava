@@ -13,6 +13,17 @@ public class Repere {
 	private int ordonnéeA;
 	private int ordonnéeB;
 
+	public Repere() {
+		
+	}
+	public Repere (int abscisseA, int abscisseB, int ordonnéeA, int ordonnéeB ) {
+		this.abscisseA = abscisseA;
+		this.abscisseB = abscisseB;
+		this.ordonnéeA = ordonnéeA;
+		this.ordonnéeB = ordonnéeB;
+	}
+	
+	
 	public int getAbcisseA() {
 		return abscisseA;
 	}

@@ -18,22 +18,22 @@ public class RepereApp {
 	 */
 	public static void main(String[] args) {
 
-		Repere re = new Repere();
+		Repere rect = new Repere();
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Veuillez saisir l'abscisse du point A :");
-		re.setAbcisseA(sc.nextInt());
+		rect.setAbcisseA(sc.nextInt());
 		System.out.println("Veuillez saisir l'ordonnée du point A :");
-		re.setOrdonnéeA(sc.nextInt());
-		re.pointA();
+		rect.setOrdonnéeA(sc.nextInt());
+		rect.pointA();
 		
 		System.out.println("Veuillez saisir l'abscisse du point B :");
-		re.setAbcisseB(sc.nextInt());
+		rect.setAbcisseB(sc.nextInt());
 		System.out.println("Veuillez saisir l'ordonnée du point B :");
-		re.setOrdonnéeB(sc.nextInt());
-		re.pointB();
+		rect.setOrdonnéeB(sc.nextInt());
+		rect.pointB();
 		sc.close();
-		re.afficherDistanceAB();
+		rect.afficherDistanceAB();
 		
 	}
 

@@ -14,6 +14,7 @@ import java.util.Date;
  *
  */
 public class Personne {
+
 	// Attributs
 	private String surnom;
 	private String nom;
@@ -32,6 +33,7 @@ public class Personne {
 	public Personne(String prenom, String nom) {
 		this.prenom = prenom;
 		this.nom = nom;
+		
 	}
 
 	// Méthodes
