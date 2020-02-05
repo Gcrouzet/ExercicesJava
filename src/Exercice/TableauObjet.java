@@ -29,6 +29,7 @@ public class TableauObjet {
 			System.out.println("veuillez saisir le surnom de la " + (i + 1) + " personne");
 			groupePersonne[i].setSurnom(sc.nextLine());
 		}
+		System.out.println("Votre groupe est compose de :");
 		for (int i = 0; i < groupePersonne.length; i++) {
 			groupePersonne[i].afficherDetails();
 		}

@@ -3,7 +3,9 @@ package com.crm.boap;
 import com.crm.bo.Personne;
 
 /**
- * @author CRM
+ * @author Crouzet Gabriel
+ * @version 1.0
+ * @since 27/01/20
  *
  */
 public class PersonneTabApp {

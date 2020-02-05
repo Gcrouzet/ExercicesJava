@@ -6,8 +6,10 @@ package com.crm.bo;
 import java.util.Date;
 
 
-/**
- * @author CRM
+/** setteur getteur nom/prenom/surnom
+ * @author Crouzet Gabriel
+ * @version 1.0
+ * @since 05/02/20
  *
  */
 public class Personne {
