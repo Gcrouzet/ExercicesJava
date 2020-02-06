@@ -6,7 +6,9 @@ package com.crm.boap;
 import com.crm.bo.Repere;
 
 /**
- * @author CRM
+ * @author Crouzet Gabriel
+ * @version 1.0
+ * @since 05/02/20
  *
  */
 public class RepereApp2 {

@@ -27,7 +27,7 @@ public class Personne {
 		nom = "";
 		prenom = "";
 		surnom = "";
-		System.out.println("Construction d'un objet personne (sans param)");
+		
 	}
 
 	public Personne(String prenom, String nom, String surnom) {
@@ -65,5 +65,19 @@ public class Personne {
 	public void afficherDetails() {
 		System.out.println(prenom + " " + nom + "(" + surnom + ")");
 
+	}
+	public boolean isEquals(Personne pers) {
+		if(this.prenom.equals(pers.prenom) && this.nom.equals(pers.nom)) {
+			return true;
+		}
+		return false;
+	}
+	
+	public int incrementeNombre (int nb) {
+		return nb++;
+	}
+	public void modifierPersonne(Personne pers) {
+		pers.nom = pers.nom.toUpperCase();
+		pers.prenom = pers.prenom.toUpperCase();
 	}
 }

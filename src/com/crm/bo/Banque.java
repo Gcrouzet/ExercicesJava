@@ -10,10 +10,11 @@ import java.util.Scanner;
  *
  */
 public class Banque {
-
+	final int DECOUVERT = -150;
 	private int numeroCompte;
-	private float solde;
+	private int solde;
 	private char reponse;
+	private static char reponse2;
 
 	public int getNumeroCompte() {
 		return numeroCompte;
@@ -23,26 +24,52 @@ public class Banque {
 		this.numeroCompte = numeroCompte;
 	}
 
-	public float getSolde() {
+	public int getSolde() {
 		return solde;
 	}
 
-	public void setSolde(float solde) {
+	public void setSolde(int solde) {
 		this.solde = solde;
 	}
 
+	public static void creerCompte() {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Voulez vous créer un nouveau compte ? O/N");
+		reponse2 = sc.nextLine().charAt(0);
+		if (reponse2 == 'O') {
+			String nombre = String.format("%010d", 1);
+			System.out.println("Votre numéro de compte est " + nombre);
+			
+
+		}
+		
+	}
+
+	
+	public static void numeroDeCompte() {
+
+		String nombre = String.format("%010d",1);
+		System.out.println("Votre numéro de compte est " + nombre);
+
+	}
+
 	public void retrait() {
+
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Voulez vous faire un retrait? O/N");
 		reponse = sc.nextLine().charAt(0);
 		if (reponse == 'O') {
 			System.out.println("Indiquez la somme que vous voulez retirer :");
-			int sommer = sc.nextInt();
-			solde = solde - sommer;
-			if (solde < (-150))
-				System.out.println("Le decouvert autorisé est de -150");
-			else
-				System.out.println("Le nouveau solde est de : " + solde);
+			int somme = sc.nextInt();
+			int solde2 = solde - somme;
+			if (solde2 < (DECOUVERT)) {
+				int reste = 150 + solde;
+				System.out.println("Le decouvert autorisé est de " + DECOUVERT);
+				System.out.println("Vous ne pouvez retirer que : " + reste);
+			} else {
+				System.out.println("Le nouveau solde est de : " + solde2);
+			}
 		}
 	}
 
@@ -52,7 +79,7 @@ public class Banque {
 		reponse = sc.nextLine().charAt(0);
 		if (reponse == 'O') {
 			System.out.println("Indiquez la somme que vous voulez déposer :");
-			float depot = sc.nextFloat();
+			int depot = sc.nextInt();
 			solde = solde + depot;
 			System.out.println("Le nouveau solde est de : " + solde);
 		}
