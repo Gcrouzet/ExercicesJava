@@ -5,8 +5,10 @@ package Exercice;
 
 import java.util.Scanner;
 
-/**
- * @author CRM
+/** Exercice tableau 2D
+ * @author Crouzet Gabriel
+ * @version 1.0
+ * @since 01/02/20
  *
  */
 public class Tableau2DJour {

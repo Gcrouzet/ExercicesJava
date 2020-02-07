@@ -5,8 +5,10 @@ package com.crm.bo;
 
 import java.util.Scanner;
 
-/**
- * @author CRM
+/** Classe métier
+ * @author Crouzet Gabriel
+ * @version 1.0
+ * @since 06/02/20
  *
  */
 public class Banque {

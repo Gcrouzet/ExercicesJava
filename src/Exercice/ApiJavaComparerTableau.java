@@ -6,7 +6,10 @@ package Exercice;
 import java.util.Arrays;
 
 /**
- * @author CRM
+ * 
+ * @author Crouzet Gabriel
+ * @version 1.0
+ * @since 2019
  *
  */
 public class ApiJavaComparerTableau {

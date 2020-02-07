@@ -7,7 +7,7 @@ import com.crm.bo.Repere;
 
 /**
  * @author Crouzet Gabriel
- * @version 1.0
+ * @version 2.0
  * @since 05/02/20
  *
  */
@@ -21,8 +21,8 @@ public class RepereApp2 {
 		Repere rect = new Repere(1, 3, 4, 5);
 		
 		
-		rect.pointA();
-		rect.pointB();
+		System.out.println("{"+rect.getAbcisseA()+", "+rect.getOrdonnéeA()+"}");
+		System.out.println("{"+rect.getAbcisseB()+", "+rect.getOrdonnéeB()+"}");
 		rect.afficherDistanceAB();
 
 	}

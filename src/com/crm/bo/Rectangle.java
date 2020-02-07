@@ -4,7 +4,10 @@
 package com.crm.bo;
 
 /**
- * @author CRM
+ * Classe métier
+ * @author Crouzet Gabriel
+ * @version 1.0
+ * @since 05/02/20
  *
  */
 public class Rectangle {

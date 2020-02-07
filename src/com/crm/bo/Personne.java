@@ -7,7 +7,7 @@ import java.util.Date;
 
 /**
  * setteur getteur nom/prenom/surnom
- * 
+ * Classe métier
  * @author Crouzet Gabriel
  * @version 1.0
  * @since 05/02/20

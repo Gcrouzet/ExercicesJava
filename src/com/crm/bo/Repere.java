@@ -4,7 +4,11 @@
 package com.crm.bo;
 
 /**
- * @author CRM
+ * Classe métier
+ * 
+ * @author Crouzet Gabriel
+ * @version 1.0
+ * @since 05/02/20
  *
  */
 public class Repere {
@@ -14,16 +18,16 @@ public class Repere {
 	private int ordonnéeB;
 
 	public Repere() {
-		
+
 	}
-	public Repere (int abscisseA, int abscisseB, int ordonnéeA, int ordonnéeB ) {
+
+	public Repere(int abscisseA, int abscisseB, int ordonnéeA, int ordonnéeB) {
 		this.abscisseA = abscisseA;
 		this.abscisseB = abscisseB;
 		this.ordonnéeA = ordonnéeA;
 		this.ordonnéeB = ordonnéeB;
 	}
-	
-	
+
 	public int getAbcisseA() {
 		return abscisseA;
 	}
@@ -56,15 +60,15 @@ public class Repere {
 		this.ordonnéeB = ordonnéeB;
 	}
 
-	public void pointA() {
-		System.out.println("le point A se trouve en : {" + abscisseA + ", " + ordonnéeA + "}");
-	}
-
-	public void pointB() {
-		System.out.println("le point B se trouve en : {" + abscisseB + ", " + ordonnéeB + "}");
-	}
-	public void afficherDistanceAB () {
-		System.out.println("La distance entre A et B est de : "+Math.sqrt(Math.pow(abscisseB-abscisseA,2)+Math.pow(ordonnéeB-ordonnéeA,2)));
+	
 		
+	
+
+	
+
+	public void afficherDistanceAB() {
+		System.out.println("La distance entre A et B est de : "
+				+ Math.sqrt(Math.pow(abscisseB - abscisseA, 2) + Math.pow(ordonnéeB - ordonnéeA, 2)));
+
 	}
 }

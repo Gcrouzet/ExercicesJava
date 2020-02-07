@@ -1,5 +1,6 @@
 package Exercice;
 import java.util.Scanner;
+
 /** Exercice 1.1.1 algo
  * @author Crouzet Gabriel
  * @version 1.0

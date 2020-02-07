@@ -7,7 +7,9 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * @author CRM
+ * @author Crouzet Gabriel
+ * @version 2.0
+ * @since 2019
  *
  */
 public class ApiJavaComparerTableauV2 {

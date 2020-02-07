@@ -27,13 +27,13 @@ public class RepereApp {
 		rect.setAbcisseA(sc.nextInt());
 		System.out.println("Veuillez saisir l'ordonnée du point A :");
 		rect.setOrdonnéeA(sc.nextInt());
-		rect.pointA();
+		System.out.println("{"+rect.getAbcisseA()+", "+rect.getOrdonnéeA()+"}");
 		
 		System.out.println("Veuillez saisir l'abscisse du point B :");
 		rect.setAbcisseB(sc.nextInt());
 		System.out.println("Veuillez saisir l'ordonnée du point B :");
 		rect.setOrdonnéeB(sc.nextInt());
-		rect.pointB();
+		System.out.println("{"+rect.getAbcisseB()+", "+rect.getOrdonnéeB()+"}");
 		sc.close();
 		rect.afficherDistanceAB();
 		
