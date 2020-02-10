@@ -42,20 +42,18 @@ public class Rectangle {
 		return longueur;
 	}
 
-	public void perimetreRectangle() {
-		System.out.println("Le périmetre du rectangle fait " + (longueur + largeur) * 2 + " cm");
+	public float perimetreRectangle() {
+		return (longueur + largeur) * 2;
 	}
 
-	public void surfaceRectangle() {
-		System.out.println("la surface du rectangle fait " + longueur * largeur + " cm²");
-	}
-	public float surface() {
+	public float surfaceRectangle() {
 		return longueur * largeur;
 	}
+	
 	public void compareRectangle(Rectangle rect2) {
-		if(this.surface()>rect2.surface()) {
+		if(this.surfaceRectangle()>rect2.surfaceRectangle()) {
 			System.out.println("le premier rectangle est plus grand");
-		}else if (this.surface()==rect2.surface()) {
+		}else if (this.surfaceRectangle()==rect2.surfaceRectangle()) {
 			System.out.println("pareil");
 		}else {
 			System.out.println("le deuxième rectangle est plus grand");
