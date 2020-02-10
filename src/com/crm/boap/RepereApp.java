@@ -35,7 +35,7 @@ public class RepereApp {
 		rect.setOrdonnéeB(sc.nextInt());
 		System.out.println("{"+rect.getAbcisseB()+", "+rect.getOrdonnéeB()+"}");
 		sc.close();
-		rect.afficherDistanceAB();
+		System.out.println("La distance entre le point A et B est : "+rect.afficherDistanceAB());
 		
 	}
 

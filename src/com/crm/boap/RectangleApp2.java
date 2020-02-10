@@ -19,13 +19,14 @@ public class RectangleApp2 {
 	public static void main(String[] args) {
 
 		Rectangle rect1 = new Rectangle(5,4);
-		rect1.perimetreRectangle();
-		rect1.surfaceRectangle();
+		System.out.println(rect1.perimetreRectangle());
+		System.out.println(rect1.surfaceRectangle());
 		
 		Rectangle rect2 = new Rectangle(8,2);
-		rect2.perimetreRectangle();
-		rect2.surfaceRectangle();
-		
+		System.out.println(rect2.perimetreRectangle());
+		System.out.println(rect2.surfaceRectangle());
+		System.out.println("Le périmètre du rectangle est : "+rect2.perimetreRectangle(" cm"));
+		System.out.println("La surface du rectangle est : "+rect2.surfaceRectangle(" cm²"));
 	}
 
 }

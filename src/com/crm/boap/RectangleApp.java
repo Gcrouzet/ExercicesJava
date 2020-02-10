@@ -28,8 +28,8 @@ public class RectangleApp {
 		System.out.println("Veuillez saisir la longueur du rectangle :");
 		rect1.setLongueur(sc.nextFloat());
 
-		rect1.perimetreRectangle();
-		rect1.surfaceRectangle();
+		System.out.println(rect1.perimetreRectangle());
+		System.out.println(rect1.surfaceRectangle());
 
 		Rectangle rect2 = new Rectangle();
 
@@ -39,8 +39,8 @@ public class RectangleApp {
 		rect2.setLongueur(sc.nextFloat());
 		sc.close();
 
-		rect2.perimetreRectangle();
-		rect2.surfaceRectangle();
+		System.out.println(rect2.perimetreRectangle());
+		System.out.println(rect2.surfaceRectangle());
 		rect1.compareRectangle(rect2);
 	}
 

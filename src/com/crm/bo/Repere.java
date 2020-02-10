@@ -60,15 +60,8 @@ public class Repere {
 		this.ordonnéeB = ordonnéeB;
 	}
 
-	
-		
-	
-
-	
-
-	public void afficherDistanceAB() {
-		System.out.println("La distance entre A et B est de : "
-				+ Math.sqrt(Math.pow(abscisseB - abscisseA, 2) + Math.pow(ordonnéeB - ordonnéeA, 2)));
+	public double afficherDistanceAB() {
+		return Math.sqrt(Math.pow(abscisseB - abscisseA, 2) + Math.pow(ordonnéeB - ordonnéeA, 2));
 
 	}
 }

@@ -3,6 +3,7 @@
  */
 package com.crm.boap;
 
+import com.crm.bo.Banque;
 
 /**
  * @author Crouzet Gabriel
@@ -12,8 +13,9 @@ package com.crm.boap;
 public class BanqueApp2 {
 	public static void main(String[] args) {
 
-
-
+		Banque bn = new Banque();
+		System.out.println(bn.getNumeroCompte());
+		
 	}
 
 }
