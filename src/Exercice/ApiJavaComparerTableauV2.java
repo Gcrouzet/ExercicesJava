@@ -6,7 +6,7 @@ package Exercice;
 import java.util.Arrays;
 import java.util.Scanner;
 
-/**
+/** Comparaison de tableau
  * @author Crouzet Gabriel
  * @version 2.0
  * @since 2019

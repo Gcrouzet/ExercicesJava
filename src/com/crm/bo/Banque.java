@@ -47,9 +47,7 @@ public class Banque {
 		solde = solde + montant;
 		return solde;
 	}
-	
-		
-	
+
 	public boolean retrait(int montant) {
 		if (solde - montant >= -150) {
 			solde = solde - montant;
@@ -57,7 +55,5 @@ public class Banque {
 		} else
 			return false;
 	}
-	
-		
-	
+
 }
