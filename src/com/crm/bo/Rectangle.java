@@ -4,7 +4,7 @@
 package com.crm.bo;
 
 /**
- * Classe métier
+ * Classe métier Rectangle
  * 
  * @author Crouzet Gabriel
  * @version 1.0

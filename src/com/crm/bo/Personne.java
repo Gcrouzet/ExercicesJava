@@ -30,10 +30,10 @@ public class Personne {
 
 	}
 
-	public Personne(String prenom, String nom, String surnom) {
+	public Personne(String prenom, String nom) {
 		this.prenom = prenom;
 		this.nom = nom;
-		this.surnom = surnom;
+		
 	}
 
 	// Méthodes

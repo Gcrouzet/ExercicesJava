@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 import com.crm.bo.Rectangle;
 
-/**
+/**classe application Rectangle calculer périmètre et surface
  * @author Crouzet Gabriel
  * @version 1.0
  * @since 05/02/20

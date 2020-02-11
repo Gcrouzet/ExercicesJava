@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 import com.crm.bo.Personne;
 
-/**
+/** tableau de personne objet
  * @author Crouzet Gabriel
  * @version 1.0
  * @since 04/02/20

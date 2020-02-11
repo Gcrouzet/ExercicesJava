@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 import com.crm.bo.Banque;
 
-/**
+/** classe application banque
  * @author Crouzet Gabriel
  * @version 1.0.0
  * @since 06/02/20
@@ -16,7 +16,7 @@ public class BanqueApp {
 	public static void main(String[] args) {
 
 		Banque bnp = new Banque(219);
-		System.out.println("Votre numéro de compte est : " + bnp.getNumeroCompte());
+		System.out.println("Votre numéro de compte est de : " + bnp.getNumeroCompte());
 		System.out.println("Votre solde est : " + bnp.getSolde()+" €");
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Que souhaitez-vous faire ? retrait/depot ");

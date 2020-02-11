@@ -5,7 +5,7 @@ package com.crm.boap;
 
 import com.crm.bo.Rectangle;
 
-/**
+/**classe application Rectangle calculer périmètre et surface
  * @author Crouzet Gabriel
  * @version 2.0
  * @since 05/02/20
