@@ -3,13 +3,14 @@
  */
 package com.crm.boap;
 
-import java.util.Scanner;
+import com.crm.bo.Point;
 
-import com.crm.bo.Repere;
 
-/**classe application Repere placer 2 points et calculer la distance
+/**
+ * classe application Repere placer 2 points et calculer la distance
+ * 
  * @author Crouzet Gabriel
- * @version 1.0
+ * @version 2.0
  * @since 05/02/20
  *
  */
@@ -20,23 +21,12 @@ public class RepereApp {
 	 */
 	public static void main(String[] args) {
 
-		Repere rect = new Repere();
+		Point pointA = new Point(1, 3);
+		Point pointB = new Point(4, 3);
+		pointA.afficherDetail();
+		pointB.afficherDetail();
+		System.out.println(pointA.calculDistanceAB(pointB));
 
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Veuillez saisir l'abscisse du point A :");
-		rect.setAbcisseA(sc.nextInt());
-		System.out.println("Veuillez saisir l'ordonnée du point A :");
-		rect.setOrdonnéeA(sc.nextInt());
-		System.out.println("{"+rect.getAbcisseA()+", "+rect.getOrdonnéeA()+"}");
-		
-		System.out.println("Veuillez saisir l'abscisse du point B :");
-		rect.setAbcisseB(sc.nextInt());
-		System.out.println("Veuillez saisir l'ordonnée du point B :");
-		rect.setOrdonnéeB(sc.nextInt());
-		System.out.println("{"+rect.getAbcisseB()+", "+rect.getOrdonnéeB()+"}");
-		sc.close();
-		System.out.println("La distance entre le point A et B est : "+rect.afficherDistanceAB());
-		
 	}
 
 }

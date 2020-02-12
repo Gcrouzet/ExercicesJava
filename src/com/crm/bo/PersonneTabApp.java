@@ -1,6 +1,4 @@
-package com.crm.formation;
-
-import com.crm.bo.Personne;
+package com.crm.bo;
 
 /**
  * @author Crouzet Gabriel
@@ -42,8 +40,8 @@ public class PersonneTabApp {
 		if (a == b) {
 			System.out.println("Les 2 entiers sont identiques");
 		}
-		Personne pers4 = new Personne("khalil", "charih", "0");
-		Personne pers5 = new Personne("khalil", "charih", "0");
+		Personne pers4 = new Personne("khalil", "charih");
+		Personne pers5 = new Personne("khalil", "charih");
 		if (pers4 == pers5) {
 			System.out.println("Les 2 objets sont identiques");
 		}
