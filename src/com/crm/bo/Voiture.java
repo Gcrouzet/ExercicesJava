@@ -15,11 +15,12 @@ public class Voiture {
 	private String couleur;
 	private int nombrePortes;
 	private int prix;
-	private int vitesseCourante;
-	private boolean etatVoiture;
-	final private int VILLE = 50;
-	final private int ROUTE = 80;
-	final private int AUTOROUTE = 130;
+	private String boite;
+	private int vitesseCourante = 0;
+	private boolean etatVoiture = false;
+	private boolean ville = false;
+	private boolean route = false;
+	private boolean autoroute = false;
 
 	public Voiture() {
 		marque = "";
@@ -27,15 +28,41 @@ public class Voiture {
 		nombrePortes = 0;
 		prix = 0;
 		vitesseCourante = 0;
+		boite="";
 	}
 
-	public Voiture(String marque, String couleur, int nbPortes, int prix, int vCourante) {
+	public Voiture(String marque, String couleur, int nbPortes, int prix, String boite) {
 		this.marque = marque;
 		this.couleur = couleur;
 		this.nombrePortes = nbPortes;
 		this.prix = prix;
-		this.vitesseCourante = vCourante;
+		this.boite=boite;
+	}
 
+	
+
+	public boolean isVille() {
+		return ville;
+	}
+
+	public boolean isRoute() {
+		return route;
+	}
+
+	public boolean isAutoroute() {
+		return autoroute;
+	}
+
+	public void setAutoroute(boolean autoroute) {
+		this.autoroute = autoroute;
+	}
+
+	public void setRoute(boolean route) {
+		this.route = route;
+	}
+
+	public void setVille(boolean ville) {
+		this.ville = ville;
 	}
 
 	public String getMarque() {
@@ -78,12 +105,36 @@ public class Voiture {
 		this.vitesseCourante = vitesseCourante;
 	}
 
-	public int accélération(int vitesse) {
-		return getVitesseCourante() + vitesse;
+	public boolean isEtatVoiture() {
+		return etatVoiture;
+	}
+
+	public void accélérationVille(int vitesse) {
+		if (getVitesseCourante() + vitesse > 50) {
+			System.out.println("Vous ne pouvez pas autant accélérer en ville");
+			vitesseCourante=50;
+		} else
+			vitesseCourante = getVitesseCourante() + vitesse;
+	}
+
+	public void accélérationRoute(int vitesse) {
+		if (getVitesseCourante() + vitesse > 80) {
+			System.out.println("Vous ne pouvez pas autant accélérer sur route");
+			vitesseCourante=80;
+		} else
+			vitesseCourante = getVitesseCourante() + vitesse;
+	}
+
+	public void accélérationAutoroute(int vitesse) {
+		if (getVitesseCourante() + vitesse > 130) {
+			System.out.println("Vous ne pouvez pas autant accélérer sur autoroute");
+			vitesseCourante=130;
+		} else
+			vitesseCourante = getVitesseCourante() + vitesse;
 	}
 
 	public int ralentir(int vitesse) {
-		return getVitesseCourante() - vitesse;
+		return vitesseCourante=getVitesseCourante() - vitesse;
 	}
 
 	public void klaxonner() {
@@ -93,5 +144,15 @@ public class Voiture {
 	public void demarrer() {
 		etatVoiture = true;
 	}
-	
+
+	public void arreter() {
+		etatVoiture = false;
+	}
+	public void afficherDetail() {
+		System.out.println("Marque : "+marque);
+		System.out.println("couleur : "+couleur);
+		System.out.println(nombrePortes+" portes");
+		System.out.println("Prix : "+prix+" €");
+		System.out.println("boite "+boite);
+	}
 }
